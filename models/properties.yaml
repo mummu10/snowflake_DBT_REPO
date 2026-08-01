@@ -1,0 +1,14 @@
+models:
+  - name: "mumtaz2"
+    config:
+      materialized: 'table'
+  - name: "mumtaz3"
+    config: 
+      materialized: 'table'
+
+sources:
+  - name: "mumtaz_source"
+    database: db_ecomm
+    schema: sc_ecomm
+    tables:
+      - name: USERS

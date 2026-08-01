@@ -1,1 +1,1 @@
-select * from DB_ECOMM.sc_ecomm.users
+select * from {{source('mumtaz_source',users)}}
